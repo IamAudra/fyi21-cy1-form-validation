@@ -18,21 +18,30 @@ regForm.addEventListener('click', function (e) {
     // 3. If empty, give user some feedback
     usernameErr.className = 'block bg-red-500 text-white'
   } else {
-    console.log('sending to server')
+   usernameSuccess.className = 'block bg-green- 600 text-white'
   }
- //@TODO: add the validation for email
- if (password.value === '') {
-   passwordErr.className = 'block bg-red-600 text-white'
- }
- else { console.log('sending to server')}
-  //@TODO: add the validation for email
 
+ //@TODO: add the validation for email
+ if (email.value === '') {
+  emailErr.className = 'block bg-red-500 text-white'
+} else {
+emailSuccess.className = 'block bg-green-600 text-white'  
+
+}
 
   //@TODO: add the validation for password
 
-if (email.value === '') {
-  emailErr.className = 'block bg-red-500 text-white'
-} else {
-  console.log('sending to server')
+
+if (password.value === '') {
+  passwordErr.className = 'block bg-red-600 text-white'
 }
-})
+else {
+  passwordSucess .className = 'block bg-green-600 text-white'
+ }
+
+ConfirmpassworErr.className = 'bg-red-500 text-white'
+}
+else {
+ConfirmpassworSuccess.className = 'block bg-green-600 text-white'
+}
+)
